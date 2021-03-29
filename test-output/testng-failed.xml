@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SiteTesting]" parallel="classes">
+  <listeners>
+    <listener class-name="com.Utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.TestCases.TC_Login">
+        <methods>
+          <include name="Login"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestCases.TC_Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [SiteTesting] -->
